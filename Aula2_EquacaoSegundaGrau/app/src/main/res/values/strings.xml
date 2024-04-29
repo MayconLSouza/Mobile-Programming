@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Equacao Segundo Grau</string>
+    <string name="valor_a">Valor de A</string>
+    <string name="valor_b">Valor de B</string>
+    <string name="valor_c">Valor de C</string>
+    <string name="delta">Valor de Delta = </string>
+    <string name="resultado_x1">x1 = </string>
+    <string name="resultado_x2">x2 = </string>
+    <string name="calcular">Calcular</string>
+</resources>
