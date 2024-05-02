@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Idade</string>
+    <string name="dia">Dia de Nascimento</string>
+    <string name="mes">Mês de Nascimento</string>
+    <string name="ano">Ano de Nascimento</string>
+    <string name="calcular">Calcular</string>
+</resources>
