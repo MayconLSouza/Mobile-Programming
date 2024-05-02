@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AutonomiaAutomovel</string>
+    <string name="consumo_medio">Consumo Médio (Km/L)</string>
+    <string name="quantidade_combustivel">Quantidade de Combustível (L)</string>
+    <string name="autonomia">Autonomia do Automóvel =</string>
+    <string name="calcular">Calcular</string>
+</resources>

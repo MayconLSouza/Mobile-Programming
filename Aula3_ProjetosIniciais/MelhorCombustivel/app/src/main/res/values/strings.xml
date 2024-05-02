@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MelhorCombustivel</string>
+    <string name="etanol">Valor do Etanol ($/L)</string>
+    <string name="gasolina">Valor da Gasolina ($/L)</string>
+    <string name="resultado">Melhor Combustível =</string>
+    <string name="calcular">Calcular</string>
+</resources>
