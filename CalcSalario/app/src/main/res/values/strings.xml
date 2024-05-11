@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalcSalario</string>
+    <string name="horas">Horas</string>
+    <string name="bonus">Bonus</string>
+    <string name="calc">Calcular</string>
+    <string name="salario">R$ </string>
+    <string name="vendedor">Vendedor</string>
+    <string name="supervisor">Supervisor</string>
+</resources>
