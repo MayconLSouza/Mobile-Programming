@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Conta Bancaria</string>
+    <string name="poupanca">Conta Poupança</string>
+    <string name="especial">Conta Especial</string>
+    <string name="num_conta">Número da Conta</string>
+    <string name="valor">Valor ($)</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="resultado"> </string>
+</resources>
