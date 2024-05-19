@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/etCpf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbVend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/vendedor" />
+
+        <RadioButton
+            android:id="@+id/rbSup"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/supervisor" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cbBonus"
+        app:layout_constraintTop_toBottomOf="@+id/cbBonus" />
+
+    <EditText
+        android:id="@+id/etHoras"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="@string/horas"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cbBonus"
+        app:layout_constraintEnd_toStartOf="@+id/cbBonus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cbBonus" />
+
+    <CheckBox
+        android:id="@+id/cbBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/bonus"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etHoras"
+        app:layout_constraintTop_toBottomOf="@+id/etNome" />
+
+    <EditText
+        android:id="@+id/etCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="@string/cpf"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="93dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/cbBonus"
+        app:layout_constraintEnd_toEndOf="@+id/etCpf"
+        app:layout_constraintTop_toBottomOf="@+id/etCpf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

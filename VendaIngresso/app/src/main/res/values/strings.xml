@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VendaIngresso</string>
+    <string name="identificador">Código Identificador</string>
+    <string name="valor">Valor ($)</string>
+    <string name="taxa">Taxa de Conveniência (%)</string>
+    <string name="calcular">Calcular</string>
+    <string name="funcao">Função</string>
+    <string name="vip">VIP</string>
+    <string name="voltar">Voltar</string>
+</resources>
