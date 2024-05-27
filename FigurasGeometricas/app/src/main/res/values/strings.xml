@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cálculos Geométricos</string>
+    <string name="retangulo">Retângulo</string>
+    <string name="circulo">Círculo</string>
+    <string name="comprimento">Comprimento</string>
+    <string name="largura">Largura</string>
+    <string name="raio">Raio</string>
+    <string name="calcArea">Calcular Área</string>
+    <string name="calcPerimetro">Calcular Perímetro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

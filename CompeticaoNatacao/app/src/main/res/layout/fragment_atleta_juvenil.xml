@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/juvenilLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtletaJuvenilFragment">
+
+    <EditText
+        android:id="@+id/etNomeJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascJuvenil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="@string/dataNasc"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroJuvenil"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeJuvenil"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeJuvenil" />
+
+    <EditText
+        android:id="@+id/etBairroJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etAnosPraticaJuvenil"
+        app:layout_constraintStart_toStartOf="@+id/etDataNascJuvenil"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascJuvenil" />
+
+    <EditText
+        android:id="@+id/etAnosPraticaJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="@string/anosPratica"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarJuvenil"
+        app:layout_constraintStart_toStartOf="@+id/etBairroJuvenil"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroJuvenil" />
+
+    <Button
+        android:id="@+id/btnCadastrarJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAnosPraticaJuvenil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

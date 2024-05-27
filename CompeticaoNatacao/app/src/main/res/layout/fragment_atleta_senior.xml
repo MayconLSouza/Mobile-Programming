@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seniorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtletaSeniorFragment">
+
+    <EditText
+        android:id="@+id/etNomeSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascSenior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/dataNasc"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroSenior"
+        app:layout_constraintStart_toStartOf="@+id/etNomeSenior"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeSenior" />
+
+    <EditText
+        android:id="@+id/etBairroSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/cbProblemasCardiacosSenior"
+        app:layout_constraintStart_toStartOf="@+id/etDataNascSenior"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascSenior" />
+
+    <CheckBox
+        android:id="@+id/cbProblemasCardiacosSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:text="@string/problemaCardiaco"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarSenior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroSenior" />
+
+    <Button
+        android:id="@+id/btnCadastrarSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintStart_toStartOf="@+id/cbProblemasCardiacosSenior"
+        app:layout_constraintTop_toBottomOf="@+id/cbProblemasCardiacosSenior" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

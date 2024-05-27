@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetanguloFragment">
+
+    <EditText
+        android:id="@+id/etComprimento"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginBottom="166dp"
+        android:ems="10"
+        android:hint="@string/comprimento"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnAreaRetangulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etLargura"
+        android:layout_width="258dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/largura"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etComprimento"
+        app:layout_constraintTop_toBottomOf="@+id/etComprimento" />
+
+    <TextView
+        android:id="@+id/tvResultadoRetangulo"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAreaRetangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/calcArea"
+        app:layout_constraintBottom_toTopOf="@+id/btnPerimetroRetangulo"
+        app:layout_constraintStart_toStartOf="@+id/btnPerimetroRetangulo"
+        app:layout_constraintTop_toBottomOf="@+id/etComprimento" />
+
+    <Button
+        android:id="@+id/btnPerimetroRetangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="259dp"
+        android:text="@string/calcPerimetro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAreaRetangulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
