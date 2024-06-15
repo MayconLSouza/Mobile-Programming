@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_console"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsoleFragment">
+
+    <EditText
+        android:id="@+id/etCodigoConsole"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etPrecoConsole"
+        app:layout_constraintStart_toStartOf="@+id/etFabricanteConsole"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloConsole" />
+
+    <Button
+        android:id="@+id/btnBuscarConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/buscar"
+        app:layout_constraintBottom_toTopOf="@+id/etNomeConsole"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeConsole" />
+
+    <EditText
+        android:id="@+id/etNomeConsole"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoConsole" />
+
+    <EditText
+        android:id="@+id/etPrecoConsole"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/preco"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etNomeConsole"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeConsole" />
+
+    <EditText
+        android:id="@+id/etFabricanteConsole"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="@string/fabricante"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecoConsole" />
+
+    <Button
+        android:id="@+id/btnInserirConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/inserir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFabricanteConsole" />
+
+    <Button
+        android:id="@+id/btnModificarConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFabricanteConsole" />
+
+    <Button
+        android:id="@+id/btnExcluirConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/excluir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirConsole" />
+
+    <Button
+        android:id="@+id/btnListarConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/listar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarConsole" />
+
+    <TextView
+        android:id="@+id/tvListarConsole"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarConsole" />
+
+    <TextView
+        android:id="@+id/tvTituloConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/console"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarConsole"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

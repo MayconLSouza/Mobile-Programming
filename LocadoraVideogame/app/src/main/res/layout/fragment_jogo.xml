@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_jogo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogoFragment">
+
+    <EditText
+        android:id="@+id/etCodigoJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etNomeJogo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloJogo" />
+
+    <Button
+        android:id="@+id/btnBuscarJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/buscar"
+        app:layout_constraintBottom_toTopOf="@+id/etNomeJogo"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeJogo" />
+
+    <EditText
+        android:id="@+id/etNomeJogo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoJogo" />
+
+    <EditText
+        android:id="@+id/etPrecoJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/preco"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etNomeJogo"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeJogo" />
+
+    <EditText
+        android:id="@+id/etDesenvolvedoraJogo"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/desenvolvedora"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecoJogo" />
+
+    <EditText
+        android:id="@+id/etIdadeJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/idade_recomendada"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etDesenvolvedoraJogo"
+        app:layout_constraintTop_toBottomOf="@+id/etDesenvolvedoraJogo" />
+
+    <Button
+        android:id="@+id/btnInserirJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/inserir"
+        app:layout_constraintEnd_toEndOf="@+id/btnExcluirJogo"
+        app:layout_constraintTop_toBottomOf="@+id/etIdadeJogo" />
+
+    <Button
+        android:id="@+id/btnModificarJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdadeJogo" />
+
+    <Button
+        android:id="@+id/btnExcluirJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/excluir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirJogo" />
+
+    <Button
+        android:id="@+id/btnListarJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/listar"
+        app:layout_constraintEnd_toEndOf="@+id/btnModificarJogo"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarJogo" />
+
+    <TextView
+        android:id="@+id/tvListarJogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarJogo" />
+
+    <TextView
+        android:id="@+id/tvTituloJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/jogo"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarJogo"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

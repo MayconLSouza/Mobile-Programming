@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">LocadoraVideogame</string>
+    <string name="cpf">CPF</string>
+    <string name="nome">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="codigo">Código</string>
+    <string name="preco">Preço (R$)</string>
+    <string name="fabricante">Fabricante</string>
+    <string name="desenvolvedora">Desenvolvedora</string>
+    <string name="idade_recomendada">Idade recomendada</string>
+    <string name="data_retirada">Data de retirada</string>
+    <string name="data_devolucao">Data de devolução</string>
+    <string name="inserir">Inserir</string>
+    <string name="modificar">Modificar</string>
+    <string name="excluir">Excluir</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>
+    <string name="cliente">Cliente</string>
+    <string name="aluguel">Aluguel</string>
+    <string name="jogo">Jogo</string>
+    <string name="console">Console</string>
+    <string name="inicio">Locadora de Videogames</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
